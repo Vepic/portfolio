@@ -1,0 +1,112 @@
+<app-header></app-header>
+<div class="wrapper">
+  <div class="page-header header-filter">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+      <div class="content-center brand">
+        <h1 class="h1-seo">HEY THERE !</h1>
+        <h3>
+          I am VEDANG POKAR
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+      <div class="section section-basic" id="basic-elements">
+          <img class="path" src="assets/img/path1.png" />
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <hr class="line-danger" />
+                <h1 class="font-weight-bold">
+                  My
+                  <span class="text-danger"> Work</span>
+                </h1>
+              </div>
+            </div>
+          <div class="row mt-5">
+              <div class="col-md-4">
+                <div class="card card-coin card-plain">
+                  <div class="card-header">
+                    <img class="img-center img-fluid" src="assets/img/ai.png" />
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <h4 class="text-uppercase font-weight-bold">Adobe Illustrator</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <ul class="list-group">
+                        <li class="list-group-item">Total Projects</li>
+                        <hr class="line-primary" />
+                        <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{aiCount}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-primary btn-simple" routerLink="/portfolio/adobe-illustrator">View All</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-coin card-plain">
+                  <div class="card-header">
+                    <img class="img-center img-fluid" src="assets/img/ae.png" />
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <h4 class="text-uppercase font-weight-bold">After Effects</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <ul class="list-group">
+                        <li class="list-group-item">Total Projects</li>
+                        <hr class="line-success" />
+                        <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{aeCount}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-success btn-simple" routerLink="/portfolio/after-effects">View All</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-coin card-plain">
+                  <div class="card-header">
+                    <img class="img-center img-fluid" src="assets/img/blender1.png" />
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <h4 class="text-uppercase font-weight-bold">Blender</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <ul class="list-group">
+                        <li class="list-group-item">Total Projects</li>
+                        <hr class="line-info" />
+                        <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{blenderCount}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-info btn-simple" routerLink="/portfolio/blender">View All</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
