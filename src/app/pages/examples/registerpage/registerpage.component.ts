@@ -2,7 +2,26 @@ import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
 
 @Component({
   selector: "app-registerpage",
-  templateUrl: "registerpage.component.html"
+  templateUrl: "registerpage.component.html",
+  styles: [
+    `
+    #square1{
+      z-index: 1000;
+      width: 400px;
+      height: 400px;
+      opacity: 100%;
+      background-image: url('assets/img/vedang_bokeh.jpg') !important;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: blur(50%);
+    }
+
+    .page-header {
+      min-height: auto !important;
+      height: auto !important;
+    }
+    `
+  ]
 })
 export class RegisterpageComponent implements OnInit, OnDestroy {
   isCollapsed = true;
@@ -21,8 +40,8 @@ export class RegisterpageComponent implements OnInit, OnDestroy {
     var squares7 = document.getElementById("square7");
     var squares8 = document.getElementById("square8");
 
-    var posX = e.clientX - window.innerWidth / 2;
-    var posY = e.clientY - window.innerWidth / 6;
+    var posX = e?.clientX - window.innerWidth / 2;
+    var posY = e?.clientY - window.innerWidth / 6;
 
     squares1.style.transform =
       "perspective(500px) rotateY(" +

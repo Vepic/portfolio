@@ -1,11 +1,33 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import noUiSlider from "nouislider";
 import { SanityService } from 'src/app/services/sanity.service';
-
+import * as AOS from 'aos';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
+  styles: [
+    `
+    #image {
+      width: 400px;
+      height: 400px;
+      opacity: 100%;
+      background-image: url('assets/img/vedang_bokeh.jpg');
+    //   background-image: url('');
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+    .testimonial {
+      // height: 500px;
+      // opacity: 100%;
+      // background: #fff;
+      // border-radius: 20px;
+      // background-image: url('assets/img/square1-red.png');
+      // background-repeat: no-repeat;
+      // background-size: cover;
+}
+    `
+  ]
 })
 export class PortfolioComponent implements OnInit, OnDestroy {
   isCollapsed = true;
@@ -30,31 +52,10 @@ export class PortfolioComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    AOS.init();
     this.getProjects();
     var body = document.getElementsByTagName("body")[0];
     body.classList.add("index-page");
-
-    // var slider = document.getElementById("sliderRegular");
-
-    // noUiSlider.create(slider, {
-    //   start: 40,
-    //   connect: false,
-    //   range: {
-    //     min: 0,
-    //     max: 100
-    //   }
-    // });
-
-    // var slider2 = document.getElementById("sliderDouble");
-
-    // noUiSlider.create(slider2, {
-    //   start: [20, 60],
-    //   connect: true,
-    //   range: {
-    //     min: 0,
-    //     max: 100
-    //   }
-    // });
   }
   ngOnDestroy() {
     var body = document.getElementsByTagName("body")[0];
@@ -63,7 +64,6 @@ export class PortfolioComponent implements OnInit, OnDestroy {
 
   async getProjects(): Promise<any>  {
     this.projects = await this.sanityService.getProjects();
-    console.log(this.projects);
     for (const project of this.projects) {
       if (project.projectType == 'blender') {
         this.blenderCount = this.blenderCount + 1;

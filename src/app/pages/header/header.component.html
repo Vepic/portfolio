@@ -1,49 +1,51 @@
-<nav
-  class="navbar navbar-expand-lg fixed-top navbar-transparent"
-  color-on-scroll="100"
-  id="navbar-top"
->
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100" id="navbar-top">
   <div class="container">
     <div class="navbar-translate">
-      <a
-        class="navbar-brand"
-        placement="bottom"
-        [routerLink]="['/portfolio']"
-      >
+      <a class="navbar-brand" placement="bottom" [routerLink]="['/portfolio']">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172"
+          style=" fill:#000000;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g id="original-icon" fill="#ffffff">
+              <path
+                d="M18.06672,13.76l48.63703,144.48h14.51922l-48.63703,-144.48zM38.89485,13.76l48.63703,144.48h17.57625l48.63703,-144.48h-14.51922l-42.90594,127.45469l-42.90594,-127.45469zM118.39781,13.76l-28.86375,85.73125l7.26297,21.56719l36.12,-107.29844z">
+              </path>
+            </g>
+          </g>
+        </svg>
         <span> Vedang Pokar </span>
       </a>
-      <button
-        aria-controls="navigation-index"
-        aria-label="Toggle navigation"
-        class="navbar-toggler navbar-toggler"
-        [attr.aria-expanded]="!isCollapsed"
-        (click)="isCollapsed = !isCollapsed"
-        id="navigation"
-        type="button"
-      >
+      <button aria-controls="navigation-index" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed" (click)="isCollapsed = !isCollapsed" id="navigation" type="button">
         <span class="navbar-toggler-bar bar1"> </span>
         <span class="navbar-toggler-bar bar2"> </span>
         <span class="navbar-toggler-bar bar3"> </span>
       </button>
     </div>
-    <div
-      class="navbar-collapse justify-content-end"
-      [collapse]="isCollapsed"
-      id="navigation"
-    >
+    <div class="navbar-collapse justify-content-end" [collapse]="isCollapsed"
+      [ng-style]="{'background-color': isCollapsed === true ? 'transparent' : '#000000'}" id="navigation">
       <div class="navbar-collapse-header">
         <div class="row">
-          <div class="col-6 collapse-brand"><a> Vedang Pokar </a></div>
+          <div class="col-6 collapse-brand"><a>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172"
+          style=" fill:#000000;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g id="original-icon" fill="#ffffff">
+              <path
+                d="M18.06672,13.76l48.63703,144.48h14.51922l-48.63703,-144.48zM38.89485,13.76l48.63703,144.48h17.57625l48.63703,-144.48h-14.51922l-42.90594,127.45469l-42.90594,-127.45469zM118.39781,13.76l-28.86375,85.73125l7.26297,21.56719l36.12,-107.29844z">
+              </path>
+            </g>
+          </g>
+        </svg>
+            Vedang Pokar </a></div>
           <div class="col-6 collapse-close text-right">
-            <button
-              aria-controls="navigation-index"
-              aria-label="Toggle navigation"
-              class="navbar-toggler"
-              [attr.aria-expanded]="!isCollapsed"
-              (click)="isCollapsed = !isCollapsed"
-              id="navigation"
-              type="button"
-            >
+            <button aria-controls="navigation-index" aria-label="Toggle navigation" class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed" (click)="isCollapsed = !isCollapsed" id="navigation" type="button">
               <i class="tim-icons icon-simple-remove"> </i>
             </button>
           </div>
@@ -51,55 +53,34 @@
       </div>
       <ul class="navbar-nav">
         <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://www.instagram.com/CreativeTimOfficial"
-            placement="bottom"
-            target="_blank"
-            tooltip="Follow us on Instagram"
-          >
+          <a class="nav-link" href="https://www.instagram.com/reel/CaptQJ0Dlyr/?utm_medium=copy_link" placement="bottom"
+            target="_blank" tooltip="Follow me on Instagram">
             <i class="fa fa-instagram"> </i>
             <p class="d-lg-none d-xl-none">Instagram</p>
           </a>
         </li>
         <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://twitter.com/CreativeTim"
-            placement="bottom"
-            target="_blank"
-            tooltip="Follow us on Pinterest"
-          >
-            <i class="fa fa-pinterest"> </i>
-            <p class="d-lg-none d-xl-none">Pinterest</p>
+          <a class="nav-link" href="https://youtube.com/channel/UCUHsLeDfO2uPIKFw9Zx8wXA" placement="bottom"
+            target="_blank" tooltip="Subscribe me on Youtube">
+            <i class="fab fa-youtube"> </i>
+            <p class="d-lg-none d-xl-none">Youtube</p>
           </a>
         </li>
         <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://www.facebook.com/CreativeTim"
-            placement="bottom"
-            target="_blank"
-            tooltip="Like us on Behance"
-          >
+          <a class="nav-link" href="https://www.behance.net/vedangpokar" placement="bottom" target="_blank"
+            tooltip="Follow me on Behance">
             <i class="fa fa-behance"> </i>
             <p class="d-lg-none d-xl-none">Behance</p>
           </a>
         </li>
-        <li class="dropdown nav-item" dropdown>
-          <a
-            class="dropdown-toggle nav-link dropdown-toggle"
-            data-toggle="dropdown"
-            dropdownToggle
-            href="javascript:void(0)"
-          >
+        <!-- <li class="dropdown nav-item" dropdown>
+          <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" dropdownToggle
+            href="javascript:void(0)">
             <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Getting started
           </a>
           <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
-            <a
-              class="dropdown-item"
-              href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/overview"
-            >
+            <a class="dropdown-item"
+              href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/overview">
               <i class="tim-icons icon-paper"> </i> Documentation
             </a>
             <a class="dropdown-item" [routerLink]="['/register']">
@@ -112,13 +93,9 @@
               <i class="tim-icons icon-single-02"> </i> Profile Page
             </a>
           </div>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a
-            class="nav-link btn btn-default d-none d-lg-block"
-            href="javascript:void(0)"
-            (click)="scrollToDownload(target)"
-          >
+          <a class="nav-link btn btn-default d-none d-lg-block" href="assets/vedang_pokar.pdf">
             <i class="tim-icons icon-cloud-download-93"> </i> Resume
           </a>
         </li>

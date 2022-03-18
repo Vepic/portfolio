@@ -62,6 +62,7 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   exports: [
+    CommonModule,
     IndexComponent,
     ProfilepageComponent,
     RegisterpageComponent,

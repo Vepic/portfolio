@@ -10,102 +10,218 @@
     <div class="squares square7"></div>
     <div class="container">
       <div class="content-center brand">
-        <h1 class="h1-seo">HEY THERE !</h1>
-        <h3>
-          I am VEDANG POKAR
+        <h1 class="h1-seo" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine"><span
+            class="text-grad">"</span>Whitespace is like air,<br /> it is necessary for
+          design<br /> to breath.<span class="text-grad">"</span> </h1>
+        <h3 class="name" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-sine" data-aos-delay="300">
+          - Vedang Pokar
         </h3>
       </div>
     </div>
   </div>
   <div class="main">
-      <div class="section section-basic" id="basic-elements">
-          <img class="path" src="assets/img/path1.png" />
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <hr class="line-danger" />
-                <h1 class="font-weight-bold">
-                  My
-                  <span class="text-danger"> Work</span>
-                </h1>
+    <div class="section section-basic" id="basic-elements">
+      <img class="path" src="assets/img/path1.png" />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <hr class="line-grad" />
+            <h1 class="font-weight-bold">
+              My
+              <span class="text-grad"> Work</span>
+            </h1>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500"
+            data-aos-anchor-placement="center-bottom">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img class="img-center img-fluid" src="assets/img/ai.png" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4 class="text-uppercase font-weight-bold">Adobe Illustrator</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">Total Projects</li>
+                    <hr class="line-danger" />
+                    <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{aiCount}}</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <button class="btn btn-danger" routerLink="/portfolio/adobe-illustrator">View All</button>
               </div>
             </div>
-          <div class="row mt-5">
-              <div class="col-md-4">
-                <div class="card card-coin card-plain">
-                  <div class="card-header">
-                    <img class="img-center img-fluid" src="assets/img/ai.png" />
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500"
+            data-aos-delay="300" data-aos-anchor-placement="center-bottom">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img class="img-center img-fluid" src="assets/img/ae.png" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4 class="text-uppercase font-weight-bold">After Effects</h4>
                   </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12 text-center">
-                        <h4 class="text-uppercase font-weight-bold">Adobe Illustrator</h4>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <ul class="list-group">
-                        <li class="list-group-item">Total Projects</li>
-                        <hr class="line-primary" />
-                        <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{aiCount}}</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card-footer text-center">
-                    <button class="btn btn-primary btn-simple" routerLink="/portfolio/adobe-illustrator">View All</button>
-                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">Total Projects</li>
+                    <hr class="line-danger" />
+                    <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{aeCount}}</li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card card-coin card-plain">
-                  <div class="card-header">
-                    <img class="img-center img-fluid" src="assets/img/ae.png" />
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12 text-center">
-                        <h4 class="text-uppercase font-weight-bold">After Effects</h4>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <ul class="list-group">
-                        <li class="list-group-item">Total Projects</li>
-                        <hr class="line-success" />
-                        <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{aeCount}}</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card-footer text-center">
-                    <button class="btn btn-success btn-simple" routerLink="/portfolio/after-effects">View All</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-coin card-plain">
-                  <div class="card-header">
-                    <img class="img-center img-fluid" src="assets/img/blender1.png" />
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12 text-center">
-                        <h4 class="text-uppercase font-weight-bold">Blender</h4>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <ul class="list-group">
-                        <li class="list-group-item">Total Projects</li>
-                        <hr class="line-info" />
-                        <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{blenderCount}}</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card-footer text-center">
-                    <button class="btn btn-info btn-simple" routerLink="/portfolio/blender">View All</button>
-                  </div>
-                </div>
+              <div class="card-footer text-center">
+                <button class="btn btn-danger" routerLink="/portfolio/after-effects">View All</button>
               </div>
             </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500"
+            data-aos-delay="600" data-aos-anchor-placement="center-bottom">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img class="img-center img-fluid" src="assets/img/blender1.png" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4 class="text-uppercase font-weight-bold">Blender</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">Total Projects</li>
+                    <hr class="line-danger" />
+                    <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{blenderCount}}</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <button class="btn btn-danger" routerLink="/portfolio/blender">View All</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <hr class="line-grad" />
+        <h1 class="font-weight-bold">
+          About
+          <span class="text-grad"> Me</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <app-registerpage></app-registerpage>
+  <div class="d-lg-none mb-5" id="image">
+    <!-- <img src="assets/img/vedang_bokeh.jpg" alt="" class="img-fluid rounded shadow-lg" style="width: 150px; height: 150px; "> -->
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <hr class="line-grad" />
+        <h1 class="font-weight-bold">
+          My
+          <span class="text-grad"> Skills</span>
+        </h1>
+      </div>
+    </div>
+    <div class="row justify-content-sm-around p-5">
+      <div class="col-md-2 col-sm-4 col-xs-6 text-center p-3" data-aos="zoom-in-up" data-aos-duration="400"
+        data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine">
+        <img src="assets/img/ai.png" alt="" class="skillimage">
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6 text-center p-3" data-aos="zoom-in-up" data-aos-duration="400"
+        data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-delay="100">
+        <img src="assets/img/ae.png" alt="" class="skillimage">
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6 text-center p-3" data-aos="zoom-in-up" data-aos-duration="400"
+        data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-delay="200">
+        <img src="assets/img/photoshop.png" alt="" class="skillimage">
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6 text-center p-3" data-aos="zoom-in-up" data-aos-duration="400"
+        data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-delay="300">
+        <img src="assets/img/blender1.png" alt="" class="skillimage">
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6 text-center p-3" data-aos="zoom-in-up" data-aos-duration="400"
+        data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-sine" data-aos-delay="400">
+        <img src="assets/img/corel_draw.png" alt="" class="skillimage">
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding-bottom: 100px;">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <hr class="line-grad" />
+        <h1 class="font-weight-bold">
+          Testi<span class="text-grad">monials</span>
+        </h1>
+      </div>
+    </div>
+    <div data-aos="zoom-in" data-aos-duration="300" data-aos-easing="ease-out-sine">
+      <carousel [showIndicators]="false" class="carousel mb-10">
+        <slide>
+          <div class="row testimonial">
+            <div class="insideDivOpacityLow"></div>
+            <div class="insideDivOpacityLow2"></div>
+            <div class="insideDivOpacityLow3"></div>
+            <div class="insideDivOpacityLow4"></div>
+            <div class="insideDivOpacityLow5"></div>
+            <div class="col-md-6 col-sn-12 p-5 text-center" style="min-height: 250px;">
+              <div style="margin-top: 10%;">
+                <div class="imgBorder rounded-circle">
+                  <div class="insideDiv"></div>
+                  <img alt="First slide" class="img-fluid rounded-circle shadow testiimg" src="assets/img/pic2.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="col p-5 text-black message">
+              <img alt="First slide" class="quote" src="assets/img/quote_white.png" />
+              <p>An absolute joy to work with Vedang, our businesses have used them for a couple of years now for all our design needs and we have always received a first class service and such a quick to response to any queries I have........would highly recommend using them to all! 5 Stars!</p>
+              <img alt="First slide" class="quote-2" src="assets/img/quote_white_2.png" />
+              <h5 class="font-weight-bold text-grad mt-3 mb-0" style="font-size: large;">- Hardik Panchal</h5>
+              <h6 class="mt-1 ml-3" style="text-transform: capitalize;">Panchal Group of Companies</h6>
+            </div>
+          </div>
+        </slide>
+        <slide>
+          <div class="row testimonial">
+            <div class="insideDivOpacityLow"></div>
+            <div class="insideDivOpacityLow2"></div>
+            <div class="insideDivOpacityLow3"></div>
+            <div class="insideDivOpacityLow4"></div>
+            <div class="insideDivOpacityLow5"></div>
+            <div class="col-md-6 col-sn-12 p-5 text-center" style="min-height: 250px;">
+              <div style="margin-top: 10%;">
+                <div class="imgBorder rounded-circle">
+                  <div class="insideDiv"></div>
+                  <img alt="First slide" class="img-fluid rounded-circle shadow testiimg"
+                  src="assets/img/image.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="col p-5 text-black message">
+              <img alt="First slide" class="quote" src="assets/img/quote_white.png" />
+              <p>Thank you so much Vedang, you have created an amazing designs for me and got it spot on first time. The colour choice and graphics are fantastic and you turned it round so quickly. Thank you for putting up with all my numerous enquiries and for always responding so quickly. Thanks again and keep up the good work!!!</p>
+              <img alt="First slide" class="quote-2" src="assets/img/quote_white_2.png" />
+              <h5 class="font-weight-bold text-grad mt-3 mb-0" style="font-size: large;">- Harshal Bhatt</h5>
+              <h6 class="mt-1 ml-3" style="text-transform: capitalize;">Senior Developer</h6>
+            </div>
+          </div>
+        </slide>
+      </carousel>
     </div>
   </div>
   <app-footer></app-footer>
