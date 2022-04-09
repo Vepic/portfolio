@@ -23,14 +23,18 @@
           <div class="row row-grid mt-6" style="grid-row-gap: 50px;" *ngIf="!loading">
             <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" *ngFor="let project of project.images">
               <img alt="Raised image" class="img-fluid rounded shadow-lg" src="{{ imageUrl(project).url() }}"
-                style="width: 100%; height: 100%; " />
+                style="width: 100%; height: 100%; "/>
+            </div>
+            <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12" *ngIf="arr.length > 0">
+              <div style="width: 100%;" class="video-container m-12" *ngFor="let v of arr, let i = index">
+                <div plyr plyrTitle="Video from Youtube" [plyrPlaysInline]="true" [plyrSources]="arr[i]">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-<app-footer></app-footer>
+  <app-footer></app-footer>
 </div>

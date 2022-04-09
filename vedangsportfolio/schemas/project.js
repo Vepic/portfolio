@@ -51,8 +51,29 @@ export default {
             name: 'images',
             title: 'Images',
             type: 'array',
-            of: [{type: 'projectImage'}]
+            of: [{ type: 'projectImage' }]
+        },
+        {
+            title: 'Video Link',
+            name: 'href',
+            type: 'url',
+            validation: Rule => Rule.uri({
+                scheme: ['http', 'https', 'mailto', 'tel']
+            })
         }
+        // {
+        //     name: 'videos',
+        //     title: 'Video Links',
+        //     type: 'array',
+        //     of: [{
+        //         title: 'Link',
+        //         name: 'href',
+        //         type: 'url',
+        //         validation: Rule => Rule.uri({
+        //             scheme: ['http', 'https', 'mailto', 'tel']
+        //         })
+        //     }]
+        // }
     ]
 
 }

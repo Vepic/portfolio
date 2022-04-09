@@ -24,6 +24,7 @@ import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.c
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
 import { CommonModule } from "@angular/common";
+import { PlyrModule } from "ngx-plyr";
 @NgModule({
   declarations: [
     AppComponent
@@ -39,6 +40,7 @@ import { CommonModule } from "@angular/common";
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
+    PlyrModule,
     // BsDropdownModule.forRoot(),
     // ProgressbarModule.forRoot(),
     // TooltipModule.forRoot(),

@@ -31,7 +31,8 @@ export class SanityService {
         slug,
         mainImage,
         projectType,
-        images
+        images,
+        href
   }`
     );
   }
@@ -43,7 +44,8 @@ export class SanityService {
         slug,
         mainImage,
         projectType,
-        images
+        images,
+        href
   }`
     );
   }

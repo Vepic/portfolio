@@ -19,3 +19,37 @@
     transform: translateX(-50%);    
     // transform: translateY(50%);    
 }
+
+.video-container {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    .video-container {
+        border-radius: 10px;
+        overflow: hidden;
+    }   
+}
+
+.plyr--full-ui input[type=range] {
+    color: #ec250d;
+  }
+  
+  .plyr__control--overlaid {
+    background: linear-gradient(90deg, #ec250d 0%, #fd5d93 100%);
+  }
+  
+  .plyr--video .plyr__control.plyr__tab-focus,
+  .plyr--video .plyr__control:hover,
+  .plyr--video .plyr__control[aria-expanded=true] {
+    background: linear-gradient(90deg, #ec250d 0%, #fd5d93 100%);
+  }
+  
+  .plyr__control.plyr__tab-focus {
+    box-shadow: 0 0 0 5px #fd5d93;
+  }
+  
+  .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+    background: linear-gradient(90deg, #ec250d 0%, #fd5d93 100%);
+  }

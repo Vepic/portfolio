@@ -80,6 +80,8 @@
     "font-awesome": "^4.7.0",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ngx-bootstrap": "6.2.0",
+    "ngx-plyr": "4.0.0",
+    "plyr": "3.6.12",
     "nouislider": "14.6.3",
     "rxjs": "6.6.3",
     "tslib": "2.0.3",

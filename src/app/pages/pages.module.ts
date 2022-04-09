@@ -28,6 +28,7 @@ import { BlenderComponent } from './blender/blender.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { PlyrModule } from "ngx-plyr";
 
 @NgModule({
   imports: [
@@ -46,7 +47,8 @@ import { HeaderComponent } from './header/header.component';
     AlertModule.forRoot(),
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    PlyrModule,
   ],
   declarations: [
     IndexComponent,

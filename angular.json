@@ -38,10 +38,13 @@
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/assets/scss/blk-design-system.scss",
               "src/assets/demo/demo.css",
+              "node_modules/plyr/dist/plyr.css",
               "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": [
+              "node_modules/plyr/dist/plyr.min.js",
               "node_modules/aos/dist/aos.js"
+
             ]
           },
           "configurations": {
