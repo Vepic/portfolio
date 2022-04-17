@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: "register", component: RegisterpageComponent },
   { path: "landing", component: LandingpageComponent },
   { path: "portfolio", component: PortfolioComponent },
-  { path: "portfolio/adobe-illustrator", component: IllustratorComponent },
+  { path: "portfolio/designs", component: IllustratorComponent },
   { path: "portfolio/after-effects", component: AfterEffectsComponent },
   { path: "portfolio/blender", component: BlenderComponent },
   { path: "project/:id", component: ProjectDetailsComponent },
