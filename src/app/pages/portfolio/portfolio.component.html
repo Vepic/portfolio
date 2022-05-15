@@ -46,13 +46,13 @@
                     <h4 class="text-uppercase font-weight-bold">Designs</h4>
                   </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                   <ul class="list-group">
                     <li class="list-group-item">Total Projects</li>
                     <hr class="line-danger" />
                     <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{aiCount}}</li>
                   </ul>
-                </div>
+                </div> -->
               </div>
               <div class="card-footer text-center">
                 <button class="btn btn-danger" routerLink="/portfolio/designs">View All</button>
@@ -71,13 +71,13 @@
                     <h4 class="text-uppercase font-weight-bold">After Effects</h4>
                   </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                   <ul class="list-group">
                     <li class="list-group-item">Total Projects</li>
                     <hr class="line-danger" />
                     <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{aeCount}}</li>
                   </ul>
-                </div>
+                </div> -->
               </div>
               <div class="card-footer text-center">
                 <button class="btn btn-danger" routerLink="/portfolio/after-effects">View All</button>
@@ -96,13 +96,13 @@
                     <h4 class="text-uppercase font-weight-bold">Blender</h4>
                   </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                   <ul class="list-group">
                     <li class="list-group-item">Total Projects</li>
                     <hr class="line-danger" />
                     <li class="list-group-item font-weight-bold" style="font-size: 28px;">{{blenderCount}}</li>
                   </ul>
-                </div>
+                </div> -->
               </div>
               <div class="card-footer text-center">
                 <button class="btn btn-danger" routerLink="/portfolio/blender">View All</button>
@@ -161,12 +161,12 @@
       </div>
     </div>
   </div>
-  <div class="container" style="padding-bottom: 100px;">
+  <!-- <div class="container" style="padding-bottom: 100px;">
     <div class="row mb-5">
       <div class="col-md-6">
         <hr class="line-grad" />
         <h1 class="font-weight-bold">
-          Testi<span class="text-grad">monials</span>
+          My <span class="text-grad">Clients</span>
         </h1>
       </div>
     </div>
@@ -221,6 +221,86 @@
             </div>
           </div>
         </slide>
+      </carousel>
+    </div>
+  </div> -->
+  <div class="container" style="padding-bottom: 100px;">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <hr class="line-grad" />
+        <h1 class="font-weight-bold">
+          My <span class="text-grad">Clients</span>
+        </h1>
+      </div>
+    </div>
+    <div data-aos="zoom-in" data-aos-duration="300" data-aos-easing="ease-out-sine">
+      <carousel [showIndicators]="false" [isAnimated]="true" [interval]="6000" class="carousel slide mb-10">
+        <ng-container *ngIf="!isMobile">
+          <slide class="three-slide" *ngFor="let s of companhSplits">
+            <div class="row gx-5 testimonial p-5">
+              <div class="col-md-4 client" *ngFor="let c of s">
+                <div class="text-center">
+                  <div style="height: 250px; overflow: hidden;">
+                    <img alt="First slide" class="clientImage align-middle" src="{{ imageUrl(c.logo).url() }}" />
+                  </div>
+                  <div style="padding: 2rem 1rem 2rem 1rem; min-height: 110px;" class="d-flex justify-content-center">
+                    <a class="nav-link client-link" href="{{c.instagramLink}}" placement="bottom" target="_blank"
+                      *ngIf="c.instagramLink">
+                      <i class="fa fa-instagram text-white" style="font-size: 28px;"> </i>
+                    </a>
+                    <a class="nav-link client-link" href="{{c.youtubeLink}}" placement="bottom" target="_blank"
+                      *ngIf="c.youtubeLink">
+                      <i class="fab fa-youtube text-white" style="font-size: 28px;"></i>
+                    </a>
+                    <a class="nav-link client-link" href="{{c.fbLink}}" placement="bottom" target="_blank" *ngIf="c.fbLink">
+                      <i class="fab fa-facebook text-white" style="font-size: 28px;"></i>
+                    </a>
+                    <a class="nav-link client-link" href="{{c.twitterLink}}" placement="bottom" target="_blank"
+                      *ngIf="c.twitterLink">
+                      <i class="fab fa-twitter text-white" style="font-size: 28px;"></i>
+                    </a>
+                    <a class="nav-link client-link" href="{{c.webLink}}" placement="bottom" target="_blank" *ngIf="c.webLink">
+                      <i class="fa fa-globe text-white" style="font-size: 28px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </slide>
+        </ng-container>
+        <ng-container *ngIf="isMobile">
+          <slide class="one-slide" *ngFor="let c of companies">
+            <div class="row gx-5 testimonial p-5">
+              <div class="col-md-4 client">
+                <div class="text-center">
+                  <div style="height: 250px; overflow: hidden;">
+                    <img alt="First slide" class="clientImage align-middle" src="{{ imageUrl(c.logo).url() }}" />
+                  </div>
+                  <div style="padding: 2rem 1rem 2rem 1rem;" class="d-flex justify-content-center">
+                    <a class="nav-link" href="{{c.instagramLink}}" placement="bottom" target="_blank"
+                      *ngIf="c.instagramLink">
+                      <i class="fa fa-instagram text-white" style="font-size: 28px;"> </i>
+                    </a>
+                    <a class="nav-link" href="{{c.youtubeLink}}" placement="bottom" target="_blank"
+                      *ngIf="c.youtubeLink">
+                      <i class="fab fa-youtube text-white" style="font-size: 28px;"></i>
+                    </a>
+                    <a class="nav-link" href="{{c.fbLink}}" placement="bottom" target="_blank" *ngIf="c.fbLink">
+                      <i class="fab fa-facebook text-white" style="font-size: 28px;"></i>
+                    </a>
+                    <a class="nav-link" href="{{c.twitterLink}}" placement="bottom" target="_blank"
+                      *ngIf="c.twitterLink">
+                      <i class="fab fa-twitter text-white" style="font-size: 28px;"></i>
+                    </a>
+                    <a class="nav-link" href="{{c.webLink}}" placement="bottom" target="_blank" *ngIf="c.webLink">
+                      <i class="fa fa-globe text-white" style="font-size: 28px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </slide>
+        </ng-container>
       </carousel>
     </div>
   </div>

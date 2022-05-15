@@ -37,6 +37,21 @@ export class SanityService {
     );
   }
 
+  async getCompanies() {
+    return await this.sanityClientCredentials.option.fetch(
+      `*[_type == "company"]{
+        title,
+        slug,
+        logo,
+        instagramLink,
+        fbLink,
+        youtubeLink,
+        webLink,
+        twitterLink
+  }`
+    );
+  }
+
   async getOneProject(slug) {
     return await this.sanityClientCredentials.option.fetch(
       `*[slug.current == "${slug}"]{

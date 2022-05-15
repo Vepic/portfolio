@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import noUiSlider from "nouislider";
 import { SanityService } from 'src/app/services/sanity.service';
 import * as AOS from 'aos';
@@ -30,6 +30,8 @@ import * as AOS from 'aos';
   ]
 })
 export class PortfolioComponent implements OnInit, OnDestroy {
+
+  @ViewChild('myCarousel') myCarousel:ElementRef;
   isCollapsed = true;
   focus;
   focus1;
@@ -42,7 +44,15 @@ export class PortfolioComponent implements OnInit, OnDestroy {
   aiCount = 0;
   blenderCount = 0;
   projects:any = [];
-  constructor(private sanityService: SanityService) { }
+  companies: any;
+  splits: any[];
+  companhSplits: any[];
+  width: number;
+  isMobile: any;
+  constructor(private sanityService: SanityService) { 
+    this.width = window.innerWidth;
+    this.isMobile = this.width < 990 ? true : false;
+  }
   scrollToDownload(element: any) {
     element.scrollIntoView({ behavior: "smooth" });
   }
@@ -54,6 +64,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
   ngOnInit() {
     AOS.init();
     this.getProjects();
+    this.getCompanies();
     var body = document.getElementsByTagName("body")[0];
     body.classList.add("index-page");
   }
@@ -75,4 +86,19 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     }
     return this.projects;
   }
+
+  async getCompanies(): Promise<any>  {
+    this.companies = await this.sanityService.getCompanies();
+    this.companhSplits = this.splitArrayIntoChunksOfLen(this.companies, 3);
+    return this.companies;
+  }
+
+  splitArrayIntoChunksOfLen(arr, len){
+    var chunks = [], i = 0, n = arr.length;
+    while (i < n) {
+      chunks.push(arr.slice(i, i += len));
+    }
+    return chunks;
+  }
+  
 }

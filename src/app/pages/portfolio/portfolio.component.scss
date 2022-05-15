@@ -19,9 +19,11 @@
 :ng-deep body {
     background-color: #101010 !important;
 }
+
 .page-header .content-center.brand {
     width: 100%;
 }
+
 .h1-seo {
     font-size: 2.5rem;
     letter-spacing: 3px;
@@ -29,8 +31,8 @@
 
 #image {
     max-width: 400px;
-      margin: 0 auto;
-      border-radius: 20%;
+    margin: 0 auto;
+    border-radius: 20%;
 }
 
 .skillimage {
@@ -45,7 +47,7 @@
     background: linear-gradient(0deg, #ec250d 0%, #fd5d93 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;       
+    -webkit-text-fill-color: transparent;
 }
 
 .line-grad {
@@ -67,7 +69,7 @@
     width: 200px;
     height: 200px;
     border: 5px solid #fff;
-    
+
 }
 
 .insideDiv {
@@ -102,6 +104,7 @@
     background: #f6f6f6;
     border-radius: 50%;
 }
+
 .insideDivOpacityLow3 {
     width: 50px;
     height: 50px;
@@ -112,6 +115,7 @@
     background: #f6f6f6;
     border-radius: 50%;
 }
+
 .insideDivOpacityLow4 {
     width: 50px;
     height: 50px;
@@ -122,6 +126,7 @@
     background: #f6f6f6;
     border-radius: 50%;
 }
+
 .insideDivOpacityLow5 {
     width: 70px;
     height: 70px;
@@ -140,7 +145,7 @@
     text-align: center;
     padding-top: 10px;
     box-shadow: 0px 0px 25px rgba(34, 34, 34, 0.452);
-    margin-left: 25%; 
+    margin-left: 25%;
     position: absolute;
     z-index: 20;
 
@@ -154,8 +159,11 @@
     max-width: 1000px;
     height: 400px;
     // margin-bottom: 50px;
-    background: #101010a9;
-    box-shadow: rgba(236, 37, 13, 0.1) 0px 20px 50px;
+    // background: #101010a9;
+    // box-shadow: rgba(236, 37, 13, 0.1) 0px 20px 50px;
+    // display: grid;
+    // grid-template-columns: auto auto auto;
+    // grid-gap: 10px;
 }
 
 .message p {
@@ -171,7 +179,7 @@
     position: absolute;
 }
 
-.quote-2{
+.quote-2 {
     filter: drop-shadow(0px 0px 15px #ec250d);
     opacity: 10%;
     float: right;
@@ -179,15 +187,59 @@
     width: 50px;
 }
 
-.carousel {
-    // padding: 20px;
-    // box-shadow: 10px 10px 10px #ec250d;
-}
 .carousel-control-prev {
     height: 100% !important;
     padding-top: 3rem;
     z-index: 2000;
 }
+
+.client {
+    width: 100%;
+    // background: ;
+    // max-height: 200px;
+    
+    // height: 80%;
+}
+
+.client>div {
+    // opacity: 50%;
+    // padding-top: 50%;
+    // border: 1px solid linear-gradient(90deg, #ec250d 0%, #fd5d93 100%);;
+    border-radius: 10px;
+    // width: 0%;
+    // min-height: 250px;
+    height: 100%;
+    background: #101010a9;
+    box-shadow: rgba(236, 37, 13, 0.1) 0px 20px 50px;
+}
+
+.client>div:hover {
+    // background: linear-gradient(90deg, #ec250d 0%, #fd5d93 100%);
+    // box-shadow: rgba(236, 35, 13, 0.279) 0px 20px 50px;
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+}
+
+.client-link:hover {
+    filter: drop-shadow(0px 0px 10px #ec250d);
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+}
+
+.clientImage {
+    max-height: 200px;
+    width: 80%;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+// .three-slide {
+//     display: true;
+// }
+
+// .one-slide {
+//     display: none;
+// }
 
 @media only screen and (max-width: 990px) {
     .testiimg {
@@ -195,7 +247,7 @@
         height: 150px;
         border: 5px solid #fff;
     }
-    
+
     .insideDiv {
         width: 120px;
         height: 120px;
@@ -206,7 +258,7 @@
         border-radius: 50%;
         z-index: -1;
     }
-    
+
     .imgBorder {
         width: 170px;
         height: 170px;
@@ -214,36 +266,48 @@
         text-align: center;
         padding-top: 10px;
         box-shadow: 0px 0px 25px rgba(34, 34, 34, 0.452);
-        margin-left: 10%; 
+        margin-left: 10%;
         position: absolute;
         z-index: 20;
-    
+
     }
 
+    // .three-slide {
+    //     display: none;
+    // }
+
+    // .one-slide {
+    //     // display: inline-flex;
+    // }
+
 }
+
 @media only screen and (max-width: 776px) {
     .h1-seo {
         font-size: 1.7rem;
     }
+
     .name {
         font-size: 1rem;
     }
+
     .testimonial {
         height: auto;
     }
 
     #image {
-      width: 300px;
-      height: 300px;
-      margin: 0 auto;
-      border-radius: 20%;
-}
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 20%;
+    }
 }
 
 @media only screen and (max-width: 776px) {
     .h1-seo {
         font-size: 1.5rem;
     }
+
     .name {
         font-size: 1rem;
     }
@@ -252,6 +316,7 @@
 .animated {
     visibility: visible !important;
 }
+
 .hide-on-init {
     visibility: hidden;
 }
